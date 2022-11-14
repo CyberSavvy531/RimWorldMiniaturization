@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
+
+	<!-- PodLauncher -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PodLauncher"]/statBases</xpath>
+				<value>
+					<Mass>10</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TransportPod -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "TransportPod"]/statBases</xpath>
+				<value>
+					<Mass>10</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- MoisturePump -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MoisturePump"]/statBases</xpath>
+				<value>
+					<Mass>10</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <!-- CryptosleepCasket -->
+    
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/statBases</xpath>
+				<value>
+					<Mass>30</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <!-- GroundPenetratingScanner -->
+    
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/statBases</xpath>
+				<value>
+					<Mass>30</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- CommsConsole -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CommsConsole"]/statBases</xpath>
+				<value>
+					<Mass>20</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <!-- Sarcophagus -->
+       
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/minifiedDef</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/thingCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]</xpath>
+				<value>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/statBases/Mass</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/statBases</xpath>
+				<value>
+					<Mass>25</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+
+<!---
+podlauncher         50 steel 1 comp
+transport pod       60 steel 1 comp
+moisture pump       75 steel 4 comp
+crypto casket       180 steel 5 ur 4 comp 1 adv
+groundscan          150 steel 4 comp 1 adv
+sarcoph             60 other
+-->

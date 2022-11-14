@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Cyber's Miniaturization</name>
+	<author>Cyber</author>
+	<packageId>Cyber.Miniaturization</packageId>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+		<li>1.3</li>
+		<li>1.4</li>
+	</supportedVersions>
+<description>
+Enables miniaturization (uninstall/reinstall) for several non-furniture items.
+
+Known Bugs:
+The mini-fied door sprite only shows half a door.  This is due to how Rimworld draws doors. 
+Reinstalling an installed door can throw an error when the door is minified. No idea why, it seems to be a harmless error. This is only seen when in debug mode.
+
+Compatibility:
+This is a simple XML mod and should be easily compatible with already existing saves.
+
+If you plan to remove the mod:
+BE SURE TO REINSTALL OR DECONSTRUCT ANY MINI VERSIONS OF THE ABOVE BUILDINGS!
+</description>
+</ModMetaData>
