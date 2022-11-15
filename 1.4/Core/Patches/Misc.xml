@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<!-- Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
@@ -94,7 +94,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "MoisturePump"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -112,7 +112,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "MoisturePump"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -123,7 +123,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- CryptosleepCasket -->
+	<!-- CryptosleepCasket -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/minifiedDef</xpath>
@@ -134,7 +134,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -152,7 +152,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -163,7 +163,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- GroundPenetratingScanner -->
+	<!-- GroundPenetratingScanner -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/minifiedDef</xpath>
@@ -174,7 +174,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -192,7 +192,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -214,7 +214,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "CommsConsole"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -232,7 +232,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "CommsConsole"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -243,7 +243,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- Sarcophagus -->
+	<!-- Sarcophagus -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/minifiedDef</xpath>
@@ -254,7 +254,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -272,7 +272,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">

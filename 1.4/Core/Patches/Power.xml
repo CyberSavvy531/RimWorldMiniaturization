@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  	<!-- Defs\ThingDefs_Buildings\Buildings_Power.xml -->
+	<!-- Defs\ThingDefs_Buildings\Buildings_Power.xml -->
 
-    <!-- WoodFiredGenerator -->
+	<!-- WoodFiredGenerator -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/minifiedDef</xpath>
@@ -14,7 +14,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -32,7 +32,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -43,7 +43,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- ChemfuelPoweredGenerator -->
+	<!-- ChemfuelPoweredGenerator -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/minifiedDef</xpath>
@@ -54,7 +54,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -72,7 +72,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -83,7 +83,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- PowerSwitch -->
+	<!-- PowerSwitch -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/minifiedDef</xpath>
@@ -94,7 +94,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -112,7 +112,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -123,7 +123,7 @@
 		</nomatch>
 	</Operation>
 
-    <!-- SolarGenerator -->
+	<!-- SolarGenerator -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/minifiedDef</xpath>
@@ -134,7 +134,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -152,7 +152,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -163,5 +163,5 @@
 		</nomatch>
 	</Operation>
 
- 
+
 </Patch>
