@@ -1,209 +1,227 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
- 	<!-- Defs\ThingDefs_Buildings\Buildings_Production.xml -->
+	<!-- Defs\ThingDefs_Buildings\Buildings_Production.xml -->
 
 	<!-- BiofuelRefinery -->
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/minifiedDef</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/thingCategories</xpath>
-				<value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<!-- For some reason, some production buildings have an empty <minifiedDef/> tag. This replaces that with the MinifiedThing value -->
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]</xpath>
+			<value>
+				<thingCategories>
 					<li>BuildingsProduction</li>
-				</value>
-			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases</xpath>
-				<value>
-					<Mass>20</Mass>
-				</value>
-			</li>
-		</operations>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
 	</Operation>
 
-    <!-- FabricationBench -->
-    
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "FabricationBench"]/minifiedDef</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FabricationBench"]/thingCategories</xpath>
-				<value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases</xpath>
+			<value>
+				<Mass>20</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- FabricationBench -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FabricationBench"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<!-- For some reason, some production buildings have an empty <minifiedDef/> tag. This replaces that with the MinifiedThing value -->
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FabricationBench"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]</xpath>
+			<value>
+				<thingCategories>
 					<li>BuildingsProduction</li>
-				</value>
-			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases</xpath>
-				<value>
-					<Mass>70</Mass>
-				</value>
-			</li>
-		</operations>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
 	</Operation>
 
-    <!-- HiTechResearchBench -->
-    
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/minifiedDef</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/thingCategories</xpath>
-				<value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases</xpath>
+			<value>
+				<Mass>70</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- HiTechResearchBench -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<!-- For some reason, some production buildings have an empty <minifiedDef/> tag. This replaces that with the MinifiedThing value -->
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]</xpath>
+			<value>
+				<thingCategories>
 					<li>BuildingsProduction</li>
-				</value>
-			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases</xpath>
-				<value>
-					<Mass>70</Mass>
-				</value>
-			</li>
-		</operations>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
 	</Operation>
 
-    <!-- ElectricCrematorium -->
-    
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases</xpath>
+			<value>
+				<Mass>70</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsMisc</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<!-- ElectricCrematorium -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases</xpath>
-				<value>
-					<Mass>70</Mass>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsProduction</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases</xpath>
+			<value>
+				<Mass>70</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!-- HydroponicsBasin -->
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsProduction</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsProduction</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/statBases</xpath>
-				<value>
-					<Mass>20</Mass>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/statBases</xpath>
+			<value>
+				<Mass>20</Mass>
+			</value>
+		</nomatch>
 	</Operation>
-
 
 </Patch>
-
-<!---
-bio refine          150 steel 3 comp
-fab bench           200 steel 12 comp 2 adv
-hitech research     250 steel 10 comp 
-elec crem           20 steel 2 comp 150 blocks
-hydro basin         100 steel 1 comp
--->
