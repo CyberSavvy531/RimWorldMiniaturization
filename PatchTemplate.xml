@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Make object minifiable -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Give object a category. This mostly affects where it appears in stockpile settings, etc. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]</xpath>
+			<value>
+				<thingCategories>
+					<li>TEMPLATE_category_name</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]/thingCategories</xpath>
+			<value>
+				<li>TEMPLATE_category_name</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Give object a mass value -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "TEMPLATE_defName"]/statBases</xpath>
+			<value>
+				<Mass>TEMPLATE_mass_amount</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+</Patch>

@@ -5,7 +5,6 @@
 
 	<!-- TorchLamp -->
 
-	<!-- Make object minifiable -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "TorchLamp"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -16,7 +15,6 @@
 		</nomatch>
 	</Operation>
 
-	<!-- Give object a category. This mostly affects where it appears in stockpile settings, etc. -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "TorchLamp"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -35,7 +33,6 @@
 		</match>
 	</Operation>
 
-	<!-- Give object a mass value -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "TorchLamp"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
