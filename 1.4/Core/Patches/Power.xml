@@ -4,219 +4,164 @@
   	<!-- Defs\ThingDefs_Buildings\Buildings_Power.xml -->
 
     <!-- WoodFiredGenerator -->
-       
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsMisc</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases</xpath>
-				<value>
-					<Mass>20</Mass>
-				</value>
-			</li>
-		</operations>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsPower</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsPower</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases</xpath>
+			<value>
+				<Mass>20</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
     <!-- ChemfuelPoweredGenerator -->
-       
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsMisc</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases</xpath>
-				<value>
-					<Mass>20</Mass>
-				</value>
-			</li>
-		</operations>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsPower</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsPower</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases</xpath>
+			<value>
+				<Mass>20</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
     <!-- PowerSwitch -->
-       
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsMisc</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases</xpath>
-				<value>
-					<Mass>5</Mass>
-				</value>
-			</li>
-		</operations>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsPower</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsPower</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases</xpath>
+			<value>
+				<Mass>5</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
     <!-- SolarGenerator -->
-    
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/minifiedDef</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
-				<value>
-					<minifiedDef>MinifiedThing</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/thingCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
-				<value>
-					<thingCategories>
-						<li>BuildingsMisc</li>
-					</thingCategories>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
 	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases/Mass</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases</xpath>
-				<value>
-					<Mass>30</Mass>
-				</value>
-			</li>
-		</operations>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsPower</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsPower</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
 	</Operation>
 
  
 </Patch>
-
-<!---
-wood gen            100 steel 2 comp
-chem gen            100 steel 3 comp
-power switch        15 steel 1 comp
-solar gen           100 steel 3 comp
--->
