@@ -226,4 +226,84 @@
 		</nomatch>
 	</Operation>
 
+	<!-- NutrientPasteDispenser -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsProduction</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/statBases</xpath>
+			<value>
+				<Mass>50</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Hopper -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Hopper"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Hopper"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Hopper"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Hopper"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsProduction</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Hopper"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsProduction</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Hopper"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Hopper"]/statBases</xpath>
+			<value>
+				<Mass>5</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>
