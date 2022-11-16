@@ -13,14 +13,11 @@
 <description>
 Enables miniaturization (uninstall/reinstall) for several non-furniture items.
 
-Known Bugs:
-The mini-fied door sprite only shows half a door.  This is due to how Rimworld draws doors. 
-Reinstalling an installed door can throw an error when the door is minified. No idea why, it seems to be a harmless error. This is only seen when in debug mode.
-
 Compatibility:
 This is a simple XML mod and should be easily compatible with already existing saves.
 
 If you plan to remove the mod:
-BE SURE TO REINSTALL OR DECONSTRUCT ANY MINI VERSIONS OF THE ABOVE BUILDINGS!
+BE SURE TO REINSTALL OR DECONSTRUCT ANY MINI VERSIONS OF THE AFFECT BUILDINGS!
+Visit the mod page for a full list of those buildings.
 </description>
 </ModMetaData>
