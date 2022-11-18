@@ -7,7 +7,7 @@ I provide the master branch of this repo as a Steam Workshop mod for any who wou
 https://steamcommunity.com/sharedfiles/filedetails/?id=2885885154
 
 **INSTALL FROM ONLY ONE SOURCE.**
-If you use Steam, do not manually install one of the releases from here.
+If you use the Steam Workshop, do not manually install one of the releases from here.
 If you wish to install from here, be sure to unsubscribe from the mod on the Steam Workshop.
 
 ## Manual Installation
