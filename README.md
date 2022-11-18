@@ -6,8 +6,8 @@ A mod for RimWorld by Ludeon Studios that aims to allow more items to be "minifi
 I provide the master branch of this repo as a Steam Workshop mod for any who would prefer to manage their mods that way.
 https://steamcommunity.com/sharedfiles/filedetails/?id=2885885154
 
-**INSTALL FROM ONLY ONE SOURCE.**
-If you use the Steam Workshop, do not manually install one of the releases from here.
+**INSTALL FROM ONLY ONE SOURCE.**\
+If you use the Steam Workshop, do not manually install one of the releases from here.\
 If you wish to install from here, be sure to unsubscribe from the mod on the Steam Workshop.
 
 ## Manual Installation
