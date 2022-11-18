@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Defs\ThingDefs_Buildings\Buildings_Production.xml -->
+
+    <!-- MechGestator -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "MechGestator"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "MechGestator"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "MechGestator"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "MechGestator"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsProduction</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "MechGestator"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsProduction</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "MechGestator"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "MechGestator"]/statBases</xpath>
+            <value>
+                <Mass>50</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- LargeMechGestator -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsProduction</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsProduction</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/statBases</xpath>
+            <value>
+                <Mass>100</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- SubcoreEncoder -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+        <!-- SubcoreEncoder has parent BenchBase which already is categorized as BuildingsProduction. TNo patch operation needed. -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/statBases</xpath>
+            <value>
+                <Mass>40</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- SubcoreSoftscanner -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsProduction</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsProduction</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/statBases</xpath>
+            <value>
+                <Mass>50</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- SubcoreRipscanner -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsProduction</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsProduction</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/statBases</xpath>
+            <value>
+                <Mass>70</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+</Patch>

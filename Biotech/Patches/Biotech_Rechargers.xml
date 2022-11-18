@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Defs\ThingDefs_Buildings\Buildings_Rechargers.xml -->
+
+    <!-- BasicRecharger -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsMisc</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsMisc</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/statBases</xpath>
+            <value>
+                <Mass>30</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!-- StandardRecharger -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>BuildingsMisc</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/thingCategories</xpath>
+            <value>
+                <li>BuildingsMisc</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/statBases</xpath>
+            <value>
+                <Mass>50</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+</Patch>
