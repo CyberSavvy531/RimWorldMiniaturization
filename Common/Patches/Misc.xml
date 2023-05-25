@@ -21,14 +21,14 @@
 			<xpath>/Defs/ThingDef[defName = "PodLauncher"]</xpath>
 			<value>
 				<thingCategories>
-					<li>BuildingsFurniture</li>
+					<li>BuildingsMisc</li>
 				</thingCategories>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "PodLauncher"]/thingCategories</xpath>
 			<value>
-				<li>BuildingsFurniture</li>
+				<li>BuildingsMisc</li>
 			</value>
 		</match>
 	</Operation>
@@ -61,14 +61,14 @@
 			<xpath>/Defs/ThingDef[defName = "TransportPod"]</xpath>
 			<value>
 				<thingCategories>
-					<li>BuildingsFurniture</li>
+					<li>BuildingsMisc</li>
 				</thingCategories>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "TransportPod"]/thingCategories</xpath>
 			<value>
-				<li>BuildingsFurniture</li>
+				<li>BuildingsMisc</li>
 			</value>
 		</match>
 	</Operation>
