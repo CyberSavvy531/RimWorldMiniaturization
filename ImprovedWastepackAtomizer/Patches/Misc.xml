@@ -5,7 +5,7 @@
 
 	<!-- Small Wastepack Atomizer -->
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional" MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]</xpath>
@@ -15,7 +15,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]</xpath>
@@ -33,7 +33,7 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/statBases</xpath>
@@ -45,7 +45,7 @@
 
 	<!-- Large Wastepack Atomizer -->
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]</xpath>
@@ -55,7 +55,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]</xpath>
@@ -73,7 +73,7 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
 		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/statBases</xpath>
