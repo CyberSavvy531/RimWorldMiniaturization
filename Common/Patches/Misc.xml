@@ -43,6 +43,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PodLauncher"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PodLauncher"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- TransportPod -->
 
 	<Operation Class="PatchOperationConditional">
@@ -79,6 +89,16 @@
 			<xpath>/Defs/ThingDef[defName = "TransportPod"]/statBases</xpath>
 			<value>
 				<Mass>15</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "TransportPod"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "TransportPod"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -123,6 +143,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "MoisturePump"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MoisturePump"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- CryptosleepCasket -->
 
 	<Operation Class="PatchOperationConditional">
@@ -159,6 +189,16 @@
 			<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/statBases</xpath>
 			<value>
 				<Mass>30</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "CryptosleepCasket"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -203,6 +243,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GroundPenetratingScanner"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- LongRangeMineralScanner -->
 
 	<Operation Class="PatchOperationConditional">
@@ -239,6 +289,16 @@
 			<xpath>/Defs/ThingDef[defName = "LongRangeMineralScanner"]/statBases</xpath>
 			<value>
 				<Mass>50</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "LongRangeMineralScanner"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LongRangeMineralScanner"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -283,6 +343,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "CommsConsole"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "CommsConsole"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- Sarcophagus -->
 
 	<Operation Class="PatchOperationConditional">
@@ -319,6 +389,16 @@
 			<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/statBases</xpath>
 			<value>
 				<Mass>20</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Sarcophagus"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Sarcophagus"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>

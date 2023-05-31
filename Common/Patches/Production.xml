@@ -50,6 +50,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- FabricationBench -->
 
 	<Operation Class="PatchOperationConditional">
@@ -93,6 +103,16 @@
 			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases</xpath>
 			<value>
 				<Mass>70</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FabricationBench"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FabricationBench"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -144,6 +164,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- ElectricCrematorium -->
 
 	<Operation Class="PatchOperationConditional">
@@ -180,6 +210,16 @@
 			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases</xpath>
 			<value>
 				<Mass>70</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -224,6 +264,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- NutrientPasteDispenser -->
 
 	<Operation Class="PatchOperationConditional">
@@ -264,6 +314,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "NutrientPasteDispenser"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- Hopper -->
 
 	<Operation Class="PatchOperationConditional">
@@ -300,6 +360,16 @@
 			<xpath>/Defs/ThingDef[defName = "Hopper"]/statBases</xpath>
 			<value>
 				<Mass>5</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Hopper"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Hopper"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
