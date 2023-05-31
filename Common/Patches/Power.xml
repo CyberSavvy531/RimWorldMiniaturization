@@ -43,6 +43,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- ChemfuelPoweredGenerator -->
 
 	<Operation Class="PatchOperationConditional">
@@ -79,6 +89,16 @@
 			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases</xpath>
 			<value>
 				<Mass>20</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
@@ -123,6 +143,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- SolarGenerator -->
 
 	<Operation Class="PatchOperationConditional">
@@ -159,6 +189,66 @@
 			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases</xpath>
 			<value>
 				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- WindTurbine -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WindTurbine"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WindTurbine"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WindTurbine"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WindTurbine"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsPower</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WindTurbine"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsPower</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WindTurbine"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WindTurbine"]/statBases</xpath>
+			<value>
+				<Mass>80</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WindTurbine"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WindTurbine"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>

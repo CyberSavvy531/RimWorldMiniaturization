@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
+
+	<!-- Small Wastepack Atomizer -->
+
+	<Operation Class="PatchOperationConditional" MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsMisc</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsFurniture</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/statBases</xpath>
+			<value>
+				<Mass>30</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Large Wastepack Atomizer -->
+
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsMisc</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/thingCategories</xpath>
+			<value>
+				<li>BuildingsFurniture</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional"  MayRequire="Cyber.ImprovedWastepackAtomizer">
+		<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/statBases</xpath>
+			<value>
+				<Mass>70</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

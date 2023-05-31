@@ -83,4 +83,14 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Cooler"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Cooler"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>
