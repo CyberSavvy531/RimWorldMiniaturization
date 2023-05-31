@@ -43,6 +43,16 @@
 		</nomatch>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Door"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Door"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- Autodoor -->
 
 	<Operation Class="PatchOperationConditional">
@@ -79,6 +89,16 @@
 			<xpath>/Defs/ThingDef[defName = "Autodoor"]/statBases</xpath>
 			<value>
 				<Mass>10</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Autodoor"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Autodoor"]</xpath>
+			<value>
+				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>
