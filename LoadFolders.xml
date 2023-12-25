@@ -16,8 +16,8 @@
 
     <v1.4>
         <li>Common</li>
-        <li IfModActive="Cyber.ImprovedWastepackAtomizer">ImprovedWastepackAtomizer</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModActive="Cyber.ImprovedWastepackAtomizer">ImprovedWastepackAtomizer</li>
     </v1.4>
 
 </loadFolders>
