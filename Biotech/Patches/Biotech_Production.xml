@@ -43,6 +43,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "MechGestator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MechGestator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- LargeMechGestator -->
 
     <Operation Class="PatchOperationConditional">
@@ -83,29 +93,19 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "LargeMechGestator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "LargeMechGestator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- SubcoreEncoder -->
 
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/minifiedDef</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]</xpath>
-            <value>
-                <minifiedDef>MinifiedThing</minifiedDef>
-            </value>
-        </nomatch>
-    </Operation>
-
-        <!-- SubcoreEncoder has parent BenchBase which already is categorized as BuildingsProduction. TNo patch operation needed. -->
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/statBases/Mass</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "SubcoreEncoder"]/statBases</xpath>
-            <value>
-                <Mass>40</Mass>
-            </value>
-        </nomatch>
-    </Operation>
+        <!-- SubcoreEncoder has parent BenchBase which already is categorized as BuildingsProduction. No patch operation needed. -->
 
     <!-- SubcoreSoftscanner -->
 
@@ -147,6 +147,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- SubcoreRipscanner -->
 
     <Operation Class="PatchOperationConditional">
@@ -186,5 +196,15 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
 
 </Patch>
