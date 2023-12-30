@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>SOS2</defName>
+    <label>sos2</label>
+    <parent>Buildings</parent>
+    <iconPath>UI/Icons/ThingCategories/Foods</iconPath>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOS2Combat</defName>
+      <label>combat</label>
+      <parent>SOS2</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOS2Power</defName>
+      <label>power</label>
+      <parent>SOS2</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOS2Navigation</defName>
+      <label>navigation</label>
+      <parent>SOS2</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOS2Temperature</defName>
+      <label>temperature</label>
+      <parent>SOS2</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOS2Misc</defName>
+      <label>misc</label>
+      <parent>SOS2</parent>
+    </ThingCategoryDef>
+
+</Defs>

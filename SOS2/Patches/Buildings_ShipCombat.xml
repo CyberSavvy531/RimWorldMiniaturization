@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Defs\ThingDefs_Buildings\Buildings_ShipCombat.xml -->
+
+
+	<!-- ========================= Ship Shields ========================= -->
+
+	<!-- Shield Generator -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/statBases</xpath>
+			<value>
+				<Mass>50</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Mini Shield Generator -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/statBases</xpath>
+			<value>
+				<Mass>15</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- ========================= Ship Heatsink ========================= -->
+
+	<!-- Heatsink Base -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Temperature</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Temperature</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Small Heatsink -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatsink"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatsink"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatsink"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatsink"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Heatsink -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatsinkLarge"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatsinkLarge"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatsinkLarge"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatsinkLarge"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Small Coolant Tank -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatManifold"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatManifold"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatManifold"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatManifold"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Coolant Tank -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatBankLarge"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatBankLarge"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatBankLarge"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatBankLarge"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Small Emergency Purge Port -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipPurgePort"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipPurgePort"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipPurgePort"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipPurgePort"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Emergency Purge Port -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipPurgePortLarge"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipPurgePortLarge"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipPurgePortLarge"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipPurgePortLarge"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- ========================= Ship Turrets ========================= -->
+
+	<!-- Turret Base -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Cannon Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACI"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACI"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACI"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACI"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Cannon Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACII"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACII"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACII"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACII"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Artillery Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACIII"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACIII"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_ACIII"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_ACIII"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Laser Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Laser Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser_Large"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser_Large"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser_Large"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Laser_Large"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Plasma Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Plasma Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma_Large"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma_Large"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma_Large"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Plasma_Large"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Railgun Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Large Railgun Turret -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic_Large"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic_Large"]</xpath>
+			<value>
+				<statBases>
+					<Mass>100</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic_Large"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTurret_Kinetic_Large"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- ========================= Spinal Weapons ========================= -->
+
+	<!-- Spinal Base -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "ShipSpinalTurretBuilding"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipSpinalTurretBuilding"]</xpath>
+			<value>
+				<statBases>
+					<Mass>1500</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "ShipSpinalTurretBuilding"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "ShipSpinalTurretBuilding"]/statBases</xpath>
+			<value>
+				<Mass>1500</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Spinal Capacitor -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/statBases</xpath>
+			<value>
+				<Mass>500</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Spinal Amplifier -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/statBases</xpath>
+			<value>
+				<Mass>250</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- ========================= Torpedos ========================= -->
+
+	<!-- Torpedo Launcher -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoOne"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoOne"]</xpath>
+			<value>
+				<statBases>
+					<Mass>40</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoOne"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoOne"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Torpedo Launcher (2) -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoTwo"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoTwo"]</xpath>
+			<value>
+				<statBases>
+					<Mass>80</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoTwo"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoTwo"]/statBases</xpath>
+			<value>
+				<Mass>80</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Torpedo Launcher (6) -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoSix"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoSix"]</xpath>
+			<value>
+				<statBases>
+					<Mass>120</Mass>
+				</statBases>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipTorpedoSix"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipTorpedoSix"]/statBases</xpath>
+			<value>
+				<Mass>120</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
