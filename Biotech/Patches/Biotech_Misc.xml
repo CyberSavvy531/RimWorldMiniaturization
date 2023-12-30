@@ -43,6 +43,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BandNode"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BandNode"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- ToxifierGenerator -->
 
     <Operation Class="PatchOperationConditional">
@@ -82,6 +92,16 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ToxifierGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ToxifierGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
 
     <!-- GeneAssembler -->
 
@@ -123,6 +143,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GeneAssembler"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GeneAssembler"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- GeneExtractor -->
 
     <Operation Class="PatchOperationConditional">
@@ -162,6 +192,16 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GeneExtractor"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GeneExtractor"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
 
     <!-- GrowthVat -->
 
@@ -203,6 +243,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GrowthVat"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GrowthVat"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- WastepackAtomizer -->
 
     <Operation Class="PatchOperationConditional">
@@ -243,6 +293,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "WastepackAtomizer"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WastepackAtomizer"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- GeneProcessor -->
 
     <Operation Class="PatchOperationConditional">
@@ -282,5 +342,15 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GeneProcessor"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GeneProcessor"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
 
 </Patch>

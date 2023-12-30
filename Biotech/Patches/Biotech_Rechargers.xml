@@ -43,6 +43,16 @@
         </nomatch>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "BasicRecharger"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
     <!-- StandardRecharger -->
 
     <Operation Class="PatchOperationConditional">
@@ -82,5 +92,15 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "StandardRecharger"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
 
 </Patch>

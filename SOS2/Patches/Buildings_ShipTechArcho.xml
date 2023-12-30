@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Defs\ThingDefs_Buildings\Buildings_ShipTechArcho.xml -->
+
+	<!-- NOTE: The archotech spinal weapons inherit all their patches from ShipSpinalTurretBuilding in Buildings_ShipCombat -->
+
+
+<!-- ========================= Hull Misc ========================= -->
+
+    <!-- Archotech Solar Generator -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/thingCategories</xpath>
+            <value>
+                <li>SOS2Power</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/stealable</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]</xpath>
+            <value>
+                <stealable>false</stealable>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/statBases</xpath>
+            <value>
+                <Mass>20</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+
+	<!-- Anit-matter Thruster -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Navigation</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Navigation</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/statBases</xpath>
+			<value>
+				<Mass>750</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Anit-matter Reactor -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Power</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Power</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/statBases</xpath>
+			<value>
+				<Mass>1500</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Anit-entropic Heatbank -->
+
+	<!-- Inherits patches from ShipHeatSinkBase in Buildings_ShipCombat -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipHeatsinkAntiEntropy"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipHeatsinkAntiEntropy"]/statBases</xpath>
+			<value>
+				<Mass>40</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Archotech Shield Generator -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Combat</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/statBases</xpath>
+			<value>
+				<Mass>25</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<!-- Archotech Spore -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Navigation</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/thingCategories</xpath>
+			<value>
+				<li>SOS2Navigation</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/statBases</xpath>
+			<value>
+				<Mass>100</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
