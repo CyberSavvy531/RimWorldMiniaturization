@@ -38,7 +38,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases</xpath>
 			<value>
-				<Mass>20</Mass>
+				<Mass>30</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -88,7 +88,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/statBases</xpath>
 			<value>
-				<Mass>20</Mass>
+				<Mass>30</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -138,7 +138,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/statBases</xpath>
 			<value>
-				<Mass>5</Mass>
+				<Mass>1</Mass>
 			</value>
 		</nomatch>
 	</Operation>

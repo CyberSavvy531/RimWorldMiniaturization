@@ -45,7 +45,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases</xpath>
 			<value>
-				<Mass>20</Mass>
+				<Mass>50</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -102,7 +102,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases</xpath>
 			<value>
-				<Mass>70</Mass>
+				<Mass>60</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -159,7 +159,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases</xpath>
 			<value>
-				<Mass>70</Mass>
+				<Mass>60</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -209,7 +209,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases</xpath>
 			<value>
-				<Mass>70</Mass>
+				<Mass>50</Mass>
 			</value>
 		</nomatch>
 	</Operation>
