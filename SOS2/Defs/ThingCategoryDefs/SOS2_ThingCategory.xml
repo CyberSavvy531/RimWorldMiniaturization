@@ -5,7 +5,6 @@
     <defName>SOS2</defName>
     <label>sos2</label>
     <parent>Buildings</parent>
-    <iconPath>UI/Icons/ThingCategories/Foods</iconPath>
   </ThingCategoryDef>
 
     <ThingCategoryDef>
