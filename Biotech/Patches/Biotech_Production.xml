@@ -38,7 +38,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "MechGestator"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>30</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -142,7 +142,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "SubcoreSoftscanner"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>30</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -192,7 +192,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "SubcoreRipscanner"]/statBases</xpath>
             <value>
-                <Mass>70</Mass>
+                <Mass>30</Mass>
             </value>
         </nomatch>
     </Operation>

@@ -71,14 +71,14 @@
             <xpath>/Defs/ThingDef[defName = "ToxifierGenerator"]</xpath>
             <value>
                 <thingCategories>
-                    <li>BuildingsMisc</li>
+                    <li>BuildingsPower</li>
                 </thingCategories>
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "ToxifierGenerator"]/thingCategories</xpath>
             <value>
-                <li>BuildingsMisc</li>
+                <li>BuildingsPower</li>
             </value>
         </match>
     </Operation>

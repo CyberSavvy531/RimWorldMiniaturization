@@ -38,7 +38,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/statBases</xpath>
             <value>
-                <Mass>30</Mass>
+                <Mass>20</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -88,7 +88,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>40</Mass>
             </value>
         </nomatch>
     </Operation>
