@@ -22,7 +22,7 @@ BE SURE TO REINSTALL OR DECONSTRUCT ANY MINI VERSIONS OF THE AFFECTED BUILDINGS!
 Visit the mod page for a full list of those buildings.
 	</description>
 	<loadAfter>
-		<li>Cyber.Miniaturization</li>
+		<li>Cyber.ImprovedWastepackAtomizer</li>
 		<li>kentington.saveourship2</li>
 	</loadAfter>
 </ModMetaData>
