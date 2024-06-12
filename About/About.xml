@@ -12,9 +12,9 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>Enables miniaturization (uninstall/reinstall) for several non-furniture items.</description>
-	<forceLoadAfter>
+	<loadAfter>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Cyber.ImprovedWastepackAtomizer</li>
 		<li>kentington.saveourship2</li>
-	</forceLoadAfter>
+	</loadAfter>
 </ModMetaData>
