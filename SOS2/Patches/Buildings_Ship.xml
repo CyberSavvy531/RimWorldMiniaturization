@@ -520,6 +520,57 @@
     </Operation>
 
 
+    <!-- Ship Drone Core -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/minifiedDef</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]</xpath>
+            <value>
+                <minifiedDef>MinifiedThing</minifiedDef>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/thingCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]</xpath>
+            <value>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/thingCategories</xpath>
+            <value>
+                <li>SOS2Navigation</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/stealable</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]</xpath>
+            <value>
+                <stealable>false</stealable>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/statBases/Mass</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/statBases</xpath>
+            <value>
+                <Mass>50</Mass>
+            </value>
+        </nomatch>
+    </Operation>
+
+
     <!-- Ship Computer Core -->
 
     <Operation Class="PatchOperationConditional">
