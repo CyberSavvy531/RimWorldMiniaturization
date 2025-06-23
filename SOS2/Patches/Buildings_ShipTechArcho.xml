@@ -30,10 +30,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGeneratorArchotech"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -81,10 +83,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "Ship_Engine_Archotech"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Navigation</li>
+				<thingCategories>
+					<li>SOS2Navigation</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -132,10 +136,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ArchotechAntimatterReactor"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Power</li>
+				<thingCategories>
+					<li>SOS2Power</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -197,10 +203,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ArchotechShieldGenerator"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -248,10 +256,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ShipArchotechSpore"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Navigation</li>
+				<thingCategories>
+					<li>SOS2Navigation</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>

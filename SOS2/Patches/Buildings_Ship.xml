@@ -28,10 +28,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipInside_SolarGenerator"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -81,10 +83,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Engine_Small"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -132,10 +136,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Engine"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -183,10 +189,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Engine_Large"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -234,10 +242,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Thruster"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -285,10 +295,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Engine_Interplanetary"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -336,10 +348,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Engine_Interplanetary_Large"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -389,10 +403,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipPilotSeatMini"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -440,10 +456,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipConsoleTactical"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -491,10 +509,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipConsoleScience"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -542,10 +562,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_DroneCore"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -593,10 +615,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_ComputerCore"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -644,10 +668,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_SensorCluster"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -695,10 +721,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_SensorClusterAdv"]/thingCategories</xpath>
             <value>
-                <li>SOS2Navigation</li>
+                <thingCategories>
+                    <li>SOS2Navigation</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -738,10 +766,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipCapacitorSmall"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -769,10 +799,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipCapacitor"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -820,10 +852,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Reactor"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -871,10 +905,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_Reactor_Small"]/thingCategories</xpath>
             <value>
-                <li>SOS2Power</li>
+                <thingCategories>
+                    <li>SOS2Power</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -924,10 +960,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_LifeSupport"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -975,10 +1013,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_LifeSupport_Small"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1026,10 +1066,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipShuttleBay"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1077,10 +1119,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipShuttleBayLarge"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1128,10 +1172,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipSalvageBay"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1179,10 +1225,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "HullFoamDistributor"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1230,10 +1278,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "ShipCloakingDevice"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1281,10 +1331,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Ship_CryptosleepCasket"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1332,10 +1384,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "SpaceCrib"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1383,10 +1437,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "CrittersleepCasket"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1434,10 +1490,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "CrittersleepCasketLarge"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1485,10 +1543,12 @@
                 </thingCategories>
             </value>
         </nomatch>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName = "Cryptonest"]/thingCategories</xpath>
             <value>
-                <li>SOS2Misc</li>
+                <thingCategories>
+                    <li>SOS2Misc</li>
+                </thingCategories>
             </value>
         </match>
     </Operation>
@@ -1512,5 +1572,27 @@
             </value>
         </nomatch>
     </Operation>
+
+    <!-- Afterlife Casket -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Ship_AvatarCasket"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Ship_AvatarCasket"]</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Misc</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "Ship_AvatarCasket"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>SOS2Misc</li>
+				</thingCategories>
+			</value>
+		</match>
+	</Operation>
 
 </Patch>
