@@ -28,10 +28,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGenerator"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -79,10 +81,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ShipCombatShieldGeneratorMini"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -132,10 +136,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[@Name = "ShipHeatsinkBase"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Temperature</li>
+				<thingCategories>
+					<li>SOS2Temperature</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -325,10 +331,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[@Name = "BaseShipTurretBuilding"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -618,10 +626,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ShipSpinalEmitter"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>
@@ -669,10 +679,12 @@
 				</thingCategories>
 			</value>
 		</nomatch>
-		<match Class="PatchOperationAdd">
+		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "ShipSpinalAmplifier"]/thingCategories</xpath>
 			<value>
-				<li>SOS2Combat</li>
+				<thingCategories>
+					<li>SOS2Combat</li>
+				</thingCategories>
 			</value>
 		</match>
 	</Operation>

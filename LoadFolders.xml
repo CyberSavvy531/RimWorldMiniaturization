@@ -30,4 +30,11 @@
         <li IfModActive="kentington.saveourship2">SOS2</li>
     </v1.5>
 
+    <v1.6>
+        <li>Common</li>
+        <li IfModActive="Ludeon.Rimworld.Ideology">Ideology</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModActive="Cyber.ImprovedWastepackAtomizer">ImprovedWastepackAtomizer</li>
+    </v1.6>
+
 </loadFolders>
