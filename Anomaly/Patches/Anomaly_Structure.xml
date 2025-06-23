@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Defs\ThingDefs_Buildings\Buildings_Structure.xml -->
+
+	<!-- GrayDoor -->
+
+	<!--
+	GrayDoor is a special door apart of Anomaly labyrinth events that inherits from the Door def instead of DoorBase.
+	It should not be minifiable, so these operations null out the associated nodes for that def.
+	-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GrayDoor"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GrayDoor"]</xpath>
+			<value>
+				<minifiedDef IsNull="True"/>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "GrayDoor"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef IsNull="True"/>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GrayDoor"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GrayDoor"]</xpath>
+			<value>
+				<thingCategories IsNull="True"/>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "GrayDoor"]/thingCategories</xpath>
+			<value>
+				<thingCategories IsNull="True"/>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- SecurityDoor -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "SecurityDoor"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SecurityDoor"]/statBases</xpath>
+			<value>
+				<Mass>15</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
