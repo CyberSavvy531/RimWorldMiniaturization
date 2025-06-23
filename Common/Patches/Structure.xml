@@ -3,12 +3,12 @@
 
 	<!-- Defs\ThingDefs_Buildings\Buildings_Structure.xml -->
 
-	<!-- Door -->
+	<!-- DoorBase -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Door"]/minifiedDef</xpath>
+		<xpath>/Defs/ThingDef[@Name = "DoorBase"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Door"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "DoorBase"]</xpath>
 			<value>
 				<minifiedDef>MinifiedThing</minifiedDef>
 			</value>
@@ -16,9 +16,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Door"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[@Name = "DoorBase"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Door"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "DoorBase"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BuildingsMisc</li>
@@ -26,12 +26,24 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Door"]/thingCategories</xpath>
+			<xpath>/Defs/ThingDef[@Name = "DoorBase"]/thingCategories</xpath>
 			<value>
 				<li>BuildingsMisc</li>
 			</value>
 		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "DoorBase"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "DoorBase"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Door -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Door"]/statBases/Mass</xpath>
@@ -43,45 +55,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Door"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Door"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
-
 	<!-- Autodoor -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Autodoor"]/minifiedDef</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Autodoor"]</xpath>
-			<value>
-				<minifiedDef>MinifiedThing</minifiedDef>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Autodoor"]/thingCategories</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Autodoor"]</xpath>
-			<value>
-				<thingCategories>
-					<li>BuildingsMisc</li>
-				</thingCategories>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Autodoor"]/thingCategories</xpath>
-			<value>
-				<li>BuildingsMisc</li>
-			</value>
-		</match>
-	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Autodoor"]/statBases/Mass</xpath>
@@ -93,12 +67,38 @@
 		</nomatch>
 	</Operation>
 
+	<!-- FenceGate -->
+
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Autodoor"]/stealable</xpath>
+		<xpath>/Defs/ThingDef[defName = "FenceGate"]/statBases/Mass</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Autodoor"]</xpath>
+			<xpath>/Defs/ThingDef[defName = "FenceGate"]/statBases</xpath>
 			<value>
-				<stealable>false</stealable>
+				<Mass>2</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AnimalFlap -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "AnimalFlap"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AnimalFlap"]/statBases</xpath>
+			<value>
+				<Mass>2</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- OrnateDoor -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "OrnateDoor"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "OrnateDoor"]/statBases</xpath>
+			<value>
+				<Mass>10</Mass>
 			</value>
 		</nomatch>
 	</Operation>
