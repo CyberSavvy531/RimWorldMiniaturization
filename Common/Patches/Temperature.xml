@@ -78,7 +78,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "Cooler"]/statBases</xpath>
 			<value>
-				<Mass>15</Mass>
+				<Mass>10</Mass>
 			</value>
 		</nomatch>
 	</Operation>
