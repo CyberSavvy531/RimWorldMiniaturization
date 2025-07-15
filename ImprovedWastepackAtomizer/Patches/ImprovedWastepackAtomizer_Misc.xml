@@ -38,7 +38,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "SmallWastepackAtomizer"]/statBases</xpath>
 			<value>
-				<Mass>30</Mass>
+				<Mass>20</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -88,7 +88,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "LargeWastepackAtomizer"]/statBases</xpath>
 			<value>
-				<Mass>70</Mass>
+				<Mass>80</Mass>
 			</value>
 		</nomatch>
 	</Operation>
