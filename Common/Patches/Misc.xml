@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
+	<!-- Core\Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
 
 	<!-- PodLauncher -->
 
@@ -38,7 +38,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "PodLauncher"]/statBases</xpath>
 			<value>
-				<Mass>30</Mass>
+				<Mass>20</Mass>
 			</value>
 		</nomatch>
 	</Operation>

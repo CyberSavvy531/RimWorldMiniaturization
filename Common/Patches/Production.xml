@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Defs\ThingDefs_Buildings\Buildings_Production.xml -->
+	<!-- Core\Defs\ThingDefs_Buildings\Buildings_Production.xml -->
 
 	<!-- BiofuelRefinery -->
 
@@ -45,7 +45,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/statBases</xpath>
 			<value>
-				<Mass>50</Mass>
+				<Mass>40</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -102,7 +102,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "FabricationBench"]/statBases</xpath>
 			<value>
-				<Mass>60</Mass>
+				<Mass>50</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -159,7 +159,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases</xpath>
 			<value>
-				<Mass>60</Mass>
+				<Mass>50</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -209,7 +209,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/statBases</xpath>
 			<value>
-				<Mass>50</Mass>
+				<Mass>40</Mass>
 			</value>
 		</nomatch>
 	</Operation>
@@ -259,7 +259,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "HydroponicsBasin"]/statBases</xpath>
 			<value>
-				<Mass>20</Mass>
+				<Mass>15</Mass>
 			</value>
 		</nomatch>
 	</Operation>
