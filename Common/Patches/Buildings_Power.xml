@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Defs\ThingDefs_Buildings\Buildings_Power.xml -->
+	<!-- Core\Defs\ThingDefs_Buildings\Buildings_Power.xml -->
 
 	<!-- WoodFiredGenerator -->
 
@@ -188,7 +188,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/statBases</xpath>
 			<value>
-				<Mass>40</Mass>
+				<Mass>60</Mass>
 			</value>
 		</nomatch>
 	</Operation>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <!-- Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
+    <!-- Biotech\Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
 
     <!-- BandNode -->
 
@@ -38,7 +38,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "BandNode"]/statBases</xpath>
             <value>
-                <Mass>20</Mass>
+                <Mass>15</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -88,7 +88,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "ToxifierGenerator"]/statBases</xpath>
             <value>
-                <Mass>20</Mass>
+                <Mass>30</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -138,7 +138,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "GeneAssembler"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>40</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -188,7 +188,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "GeneExtractor"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>40</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -238,7 +238,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "GrowthVat"]/statBases</xpath>
             <value>
-                <Mass>30</Mass>
+                <Mass>20</Mass>
             </value>
         </nomatch>
     </Operation>
@@ -338,7 +338,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName = "GeneProcessor"]/statBases</xpath>
             <value>
-                <Mass>50</Mass>
+                <Mass>30</Mass>
             </value>
         </nomatch>
     </Operation>

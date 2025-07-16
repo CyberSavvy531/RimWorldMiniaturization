@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Defs\ThingDefs_Buildings\Buildings_Ideo.xml -->
+	<!-- Ideology\Defs\ThingDefs_Buildings\Buildings_Ideo.xml -->
 
-	<!-- Altar_Small -->
+	<!-- AltarBase -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Small"]/minifiedDef</xpath>
+		<xpath>/Defs/ThingDef[@Name = "AltarBase"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Small"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "AltarBase"]</xpath>
 			<value>
 				<minifiedDef>MinifiedThing</minifiedDef>
 			</value>
@@ -16,9 +16,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Small"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[@Name = "AltarBase"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Small"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "AltarBase"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BuildingsMisc</li>
@@ -26,12 +26,24 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Small"]/thingCategories</xpath>
+			<xpath>/Defs/ThingDef[@Name = "AltarBase"]/thingCategories</xpath>
 			<value>
 				<li>BuildingsMisc</li>
 			</value>
 		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "AltarBase"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "AltarBase"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Altar_Small -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Altar_Small"]/statBases/Mass</xpath>
@@ -43,45 +55,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Small"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Small"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
-
 	<!-- Altar_Medium -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Medium"]/minifiedDef</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Medium"]</xpath>
-			<value>
-				<minifiedDef>MinifiedThing</minifiedDef>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Medium"]/thingCategories</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Medium"]</xpath>
-			<value>
-				<thingCategories>
-					<li>BuildingsMisc</li>
-				</thingCategories>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Medium"]/thingCategories</xpath>
-			<value>
-				<li>BuildingsMisc</li>
-			</value>
-		</match>
-	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Altar_Medium"]/statBases/Mass</xpath>
@@ -93,45 +67,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Medium"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Medium"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
-
 	<!-- Altar_Large -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Large"]/minifiedDef</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Large"]</xpath>
-			<value>
-				<minifiedDef>MinifiedThing</minifiedDef>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Large"]/thingCategories</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Large"]</xpath>
-			<value>
-				<thingCategories>
-					<li>BuildingsMisc</li>
-				</thingCategories>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Large"]/thingCategories</xpath>
-			<value>
-				<li>BuildingsMisc</li>
-			</value>
-		</match>
-	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Altar_Large"]/statBases/Mass</xpath>
@@ -143,45 +79,7 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Large"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Large"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
-
 	<!-- Altar_Grand -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/minifiedDef</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Grand"]</xpath>
-			<value>
-				<minifiedDef>MinifiedThing</minifiedDef>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/thingCategories</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Grand"]</xpath>
-			<value>
-				<thingCategories>
-					<li>BuildingsMisc</li>
-				</thingCategories>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/thingCategories</xpath>
-			<value>
-				<li>BuildingsMisc</li>
-			</value>
-		</match>
-	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/statBases/Mass</xpath>
@@ -189,16 +87,6 @@
 			<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/statBases</xpath>
 			<value>
 				<Mass>40</Mass>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Altar_Grand"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Altar_Grand"]</xpath>
-			<value>
-				<stealable>false</stealable>
 			</value>
 		</nomatch>
 	</Operation>

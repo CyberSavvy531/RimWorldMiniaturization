@@ -36,6 +36,7 @@
         <li IfModActive="Ludeon.Rimworld.Ideology">Ideology</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
         <li IfModActive="Ludeon.Rimworld.Anomaly">Anomaly</li>
+        <li IfModActive="Ludeon.Rimworld.Odyssey">Odyssey</li>
         <li IfModActive="Cyber.ImprovedWastepackAtomizer">ImprovedWastepackAtomizer</li>
     </v1.6>
 
