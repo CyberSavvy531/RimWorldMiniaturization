@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Odyssey\Defs\ThingDefs_Buildings\Buildings_Misc.xml -->
+
+	<!-- AncientBlastDoor -->
+
+	<!--
+	AncientBlastDoor is a special door apart of Odyssey and should not be minifiable,
+	so these operations null out the associated nodes for that def.
+	-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]</xpath>
+			<value>
+				<minifiedDef IsNull="True"/>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef IsNull="True"/>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]</xpath>
+			<value>
+				<thingCategories IsNull="True"/>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "AncientBlastDoor"]/thingCategories</xpath>
+			<value>
+				<thingCategories IsNull="True"/>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -53,4 +53,17 @@
 		</nomatch>
 	</Operation>
 
+	<!-- VacBarrier -->
+	<!-- Inherits other operations from the Door ThingDef in Common/Patches/Buildings_Structure.xml -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "VacBarrier"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VacBarrier"]/statBases</xpath>
+			<value>
+				<Mass>10</Mass>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>
