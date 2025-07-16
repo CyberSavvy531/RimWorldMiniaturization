@@ -6,9 +6,9 @@
 	<!-- FuelTankBase -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FuelTankBase"]/minifiedDef</xpath>
+		<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]/minifiedDef</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FuelTankBase"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]</xpath>
 			<value>
 				<minifiedDef>MinifiedThing</minifiedDef>
 			</value>
@@ -16,9 +16,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FuelTankBase"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]/thingCategories</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FuelTankBase"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BuildingsMisc</li>
@@ -26,7 +26,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FuelTankBase"]/thingCategories</xpath>
+			<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]/thingCategories</xpath>
 			<value>
 				<li>BuildingsMisc</li>
 			</value>
@@ -34,9 +34,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FuelTankBase"]/stealable</xpath>
+		<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]/stealable</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FuelTankBase"]</xpath>
+			<xpath>/Defs/ThingDef[@Name = "FuelTankBase"]</xpath>
 			<value>
 				<stealable>false</stealable>
 			</value>
