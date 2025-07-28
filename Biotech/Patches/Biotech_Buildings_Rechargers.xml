@@ -3,12 +3,12 @@
 
     <!-- Biotech\Defs\ThingDefs_Buildings\Buildings_Rechargers.xml -->
 
-    <!-- BasicRecharger -->
+    <!-- BaseMechCharger -->
 
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/minifiedDef</xpath>
+        <xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]/minifiedDef</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
+            <xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]</xpath>
             <value>
                 <minifiedDef>MinifiedThing</minifiedDef>
             </value>
@@ -16,9 +16,9 @@
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/thingCategories</xpath>
+        <xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]/thingCategories</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
+            <xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]</xpath>
             <value>
                 <thingCategories>
                     <li>BuildingsMisc</li>
@@ -26,12 +26,24 @@
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/thingCategories</xpath>
+            <xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]/thingCategories</xpath>
             <value>
                 <li>BuildingsMisc</li>
             </value>
         </match>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]/stealable</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name = "BaseMechCharger"]</xpath>
+			<value>
+				<stealable>false</stealable>
+			</value>
+		</nomatch>
+	</Operation>
+
+    <!-- BasicRecharger -->
 
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "BasicRecharger"]/statBases/Mass</xpath>
@@ -43,45 +55,7 @@
         </nomatch>
     </Operation>
 
-    <Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "BasicRecharger"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "BasicRecharger"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
-
     <!-- StandardRecharger -->
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/minifiedDef</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
-            <value>
-                <minifiedDef>MinifiedThing</minifiedDef>
-            </value>
-        </nomatch>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/thingCategories</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
-            <value>
-                <thingCategories>
-                    <li>BuildingsMisc</li>
-                </thingCategories>
-            </value>
-        </nomatch>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/thingCategories</xpath>
-            <value>
-                <li>BuildingsMisc</li>
-            </value>
-        </match>
-    </Operation>
 
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "StandardRecharger"]/statBases/Mass</xpath>
@@ -92,15 +66,5 @@
             </value>
         </nomatch>
     </Operation>
-
-    <Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "StandardRecharger"]/stealable</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "StandardRecharger"]</xpath>
-			<value>
-				<stealable>false</stealable>
-			</value>
-		</nomatch>
-	</Operation>
 
 </Patch>
