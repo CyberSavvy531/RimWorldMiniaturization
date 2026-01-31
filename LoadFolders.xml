@@ -38,6 +38,7 @@
         <li IfModActive="Ludeon.Rimworld.Anomaly">Anomaly</li>
         <li IfModActive="Ludeon.Rimworld.Odyssey">Odyssey</li>
         <li IfModActive="Cyber.ImprovedWastepackAtomizer">ImprovedWastepackAtomizer</li>
+        <li IfModActive="kentington.saveourship2">SOS2</li>
     </v1.6>
 
 </loadFolders>
